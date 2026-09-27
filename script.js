@@ -4,6 +4,10 @@ let idiomaActual = 'es';
 const traducciones = {
     es: {
         subtitulo: "¡Horneadas con amor todos los días!",
+        bienvenidaTitulo: "¡Bienvenidos a Cookie Heaven!",
+        bienvenidaTexto: "Somos una pastelería artesanal dedicada a crear las galletas más frescas, crocantes y deliciosas de la ciudad. Usamos ingredientes de primera calidad para que cada bocado sea una experiencia única.",
+        ubicacionTitulo: "📍 Nuestra Ubicación",
+        ubicacionTexto: "Nos encontrás en Av. Principal 1234, Ciudad. ¡Vení a probarlas recién salidas del horno!",
         cookie1Titulo: "Choco Chips",
         cookie1Desc: "La clásica galleta con chispas de chocolate semiamargo.",
         cookie1Btn: "Agregar al carrito",
@@ -18,6 +22,10 @@ const traducciones = {
     },
     it: {
         subtitulo: "Infornate con amore ogni giorno!",
+        bienvenidaTitulo: "Benvenuti da Cookie Heaven!",
+        bienvenidaTexto: "Siamo una pasticceria artigianale dedicata a creare i biscotti più freschi, croccanti e deliziosi della città. Utilizziamo ingredienti di prima qualità affinché ogni morso sia un'esperienza unica.",
+        ubicacionTitulo: "📍 La Nostra Posizione",
+        ubicacionTexto: "Ci trovi in Av. Principal 1234, Città. Vieni a provarli appena sfornati!",
         cookie1Titulo: "Gocce di Cioccolato",
         cookie1Desc: "Il classico biscotto con gocce di cioccolato fondente.",
         cookie1Btn: "Aggiungi al carrello",
@@ -37,6 +45,10 @@ function cambiarIdioma(nuevoIdioma) {
     const text = traducciones[idiomaActual];
 
     document.getElementById('subtitulo').textContent = text.subtitulo;
+    document.getElementById('bienvenida-titulo').textContent = text.bienvenidaTitulo;
+    document.getElementById('bienvenida-texto').textContent = text.bienvenidaTexto;
+    document.getElementById('ubicacion-titulo').textContent = text.ubicacionTitulo;
+    document.getElementById('ubicacion-texto').textContent = text.ubicacionTexto;
     
     document.getElementById('cookie1-titulo').textContent = text.cookie1Titulo;
     document.getElementById('cookie1-desc').textContent = text.cookie1Desc;
