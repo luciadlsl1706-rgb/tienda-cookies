@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Heaven - Las mejores galletas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="lang-switch">
+            <button onclick="cambiarIdioma('es')">🇪🇸 Pasar a español</button>
+            <button onclick="cambiarIdioma('it')">🇮🇹 Pasar a italiano</button>
+        </div>
+        <h1 id="titulo">🍪 Cookie Heaven 🍪</h1>
+        <p id="subtitulo">¡Horneadas con amor todos los días!</p>
+    </header>
+
+    <main class="catalogo">
+        <div class="card">
+            <span class="emoji">🍫</span>
+            <h2 id="cookie1-titulo">Choco Chips</h2>
+            <p id="cookie1-desc">La clásica galleta con chispas de chocolate semiamargo.</p>
+            <span class="precio">$2.50</span>
+            <button id="cookie1-btn" onclick="agregarAlCarrito('Choco Chips')">Agregar al carrito</button>
+        </div>
+
+        <div class="card">
+            <span class="emoji">🔴</span>
+            <h2 id="cookie2-titulo">Red Velvet</h2>
+            <p id="cookie2-desc">Suave masa de red velvet rellena de crema de queso.</p>
+            <span class="precio">$3.00</span>
+            <button id="cookie2-btn" onclick="agregarAlCarrito('Red Velvet')">Agregar al carrito</button>
+        </div>
+
+        <div class="card">
+            <span class="emoji">🥜</span>
+            <h2 id="cookie3-titulo">Manteca de Maní</h2>
+            <p id="cookie3-desc">Cremosa y crocante con trozos de maní tostado.</p>
+            <span class="precio">$2.80</span>
+            <button id="cookie3-btn" onclick="agregarAlCarrito('Manteca de Maní')">Agregar al carrito</button>
+        </div>
+    </main>
+
+    <section class="carrito-seccion">
+        <h2>🛒 <span id="carrito-titulo">Tu Carrito</span> (<span id="contador">0</span>)</h2>
+        <ul id="lista-carrito">
+            <li class="vacio" id="carrito-vacio">El carrito está vacío.</li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
