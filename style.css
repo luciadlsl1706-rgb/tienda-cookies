@@ -36,6 +36,38 @@ header p {
     font-style: italic;
 }
 
+/* Estilos de la sección de Inicio e Información */
+.info-seccion {
+    background-color: #ffffff;
+    max-width: 700px;
+    margin: 20px auto 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.info-seccion h2 {
+    color: #8b5a2b;
+    margin-top: 0;
+}
+
+.info-seccion p {
+    line-height: 1.6;
+    color: #5c4738;
+}
+
+.ubicacion-box {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px dashed #f5e1ce;
+}
+
+.ubicacion-box h3 {
+    color: #d84315;
+    margin-bottom: 5px;
+}
+
+/* Catálogo */
 .catalogo {
     display: flex;
     justify-content: center;
@@ -90,6 +122,7 @@ button:active {
     transform: scale(0.98);
 }
 
+/* Carrito */
 .carrito-seccion {
     margin-top: 40px;
     background: #fff;
